@@ -14,6 +14,7 @@
                 <field name="tempat_lahir"/>
                 <field name="tanggal_lahir"/>
                 <field name="alamat"/>
+                <field name="id_wali"/>
             </tree>
         </field>
     </record>
@@ -33,6 +34,9 @@
                         <field name="tempat_lahir"/>
                         <field name="tanggal_lahir"/>
                         <field name="alamat"/>
+                    </group>
+                    <group>
+                        <field name="id_wali"/>
                     </group>
                 </sheet>
             </form>

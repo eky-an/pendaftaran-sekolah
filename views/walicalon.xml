@@ -6,7 +6,6 @@
         <field name="model">pendaftaran.walicalon</field>
         <field name="arch" type="xml">
             <tree>
-                <field name="id_calonsiswa"/>
                 <field name="status_wali"/>
                 <field name="name"/>
                 <field name="nik"/>
@@ -27,7 +26,6 @@
             <form string="">
                 <sheet>
                     <group>
-                        <field name="id_calonsiswa"/>
                         <field name="status_wali"/>
                     </group>
                     <group>

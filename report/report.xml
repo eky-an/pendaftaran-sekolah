@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="report_pendaftaran_daftar" model="ir.actions.report">
+        <field name="name">Report Pendaftaran</field>
+        <field name="model">pendaftaran.daftar</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">pendaftaransekolah.report_pendaftaran_daftar</field>
+        <field name="report_file">pendaftaransekolah.report_pendaftaran_daftar</field>
+        <field name="binding_model_id" ref="model_pendaftaran_daftar"/>
+        <field name="binding_type">report</field>
+    </record>
+
+</odoo>

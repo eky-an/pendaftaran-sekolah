@@ -33,6 +33,8 @@
         'views/calonsiswa.xml',
         'views/walicalon.xml',
         'views/daftar.xml',
+        'report/report.xml',
+        'report/pendaftaran_report.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
