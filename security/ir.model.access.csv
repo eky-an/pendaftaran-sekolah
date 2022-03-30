@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+access_pendaftaran_jalur,access.pendaftaran.jalur,model_pendaftaran_jalur,,1,1,1,1
+access_pendaftaran_calonsiswa,access.pendaftaran.calonsiswa,model_pendaftaran_calonsiswa,,1,1,1,1
+access_pendaftaran_daftar,access.pendaftaran.daftar,model_pendaftaran_daftar,,1,1,1,1
+access_pendaftaran_walicalon,access.pendaftaran.walicalon,model_pendaftaran_walicalon,,1,1,1,1

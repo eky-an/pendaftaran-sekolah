@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+
+    <!-- pendaftaran.daftar tree view -->
+    <record id="pendaftaran_daftar_view_tree" model="ir.ui.view">
+        <field name="name">Daftar Data Pendaftar</field>
+        <field name="model">pendaftaran.daftar</field>
+        <field name="arch" type="xml">
+            <tree>
+                <!-- Add your fields here -->
+                <field name="name"/>
+                <field name="tanggal_daftar"/>
+                <field name="calonsiswa_id"/>
+                <field name="jalur_id"/>
+                <field name="biaya_daftar"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- pendaftaran.daftar form view -->
+    <record id="pendaftaran_daftar_view_form" model="ir.ui.view">
+        <field name="name">Form Pendaftaran</field>
+        <field name="model">pendaftaran.daftar</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="tanggal_daftar"/>
+                    </group>
+                    <group>
+                        <field name="calonsiswa_id"/>
+                        <field name="jalur_id"/>
+                    </group>
+                    <group>
+                        <field name="biaya_daftar"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- pendaftaran.daftar action window -->
+    <record id="pendaftaran_daftar_action" model="ir.actions.act_window">
+        <field name="name">Pendaftaran Calon Siswa</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">pendaftaran.daftar</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    
+    <!-- This Menu Item must have a parent and an action -->
+    <menuitem id="pendaftaran_daftar_menu_act" name="Pendaftaran Calon Siswa" parent="pendaftaran_menu_categ" action="pendaftaran_daftar_action" sequence="20"/>
+
+</odoo>

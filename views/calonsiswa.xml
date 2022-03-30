@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- pendaftaran_calonsiswa tree view -->
+    <record id="pendaftaran_calonsiswa_view_tree" model="ir.ui.view">
+        <field name="name">Daftar Calon Siswa</field>
+        <field name="model">pendaftaran.calonsiswa</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="nisn"/>
+                <field name="agama"/>
+                <field name="jenis_kelamin"/>
+                <field name="tempat_lahir"/>
+                <field name="tanggal_lahir"/>
+                <field name="alamat"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- model.name form view -->
+    <record id="pendaftaran_calonsiswa_view_form" model="ir.ui.view">
+        <field name="name">Form Calon Siswa</field>
+        <field name="model">pendaftaran.calonsiswa</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="nisn"/>
+                        <field name="agama"/>
+                        <field name="jenis_kelamin"/>
+                        <field name="tempat_lahir"/>
+                        <field name="tanggal_lahir"/>
+                        <field name="alamat"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- This Menu Item Must have a parent -->
+    <!-- model.name action window -->
+    <record id="pendaftaran_calonsiswa_action" model="ir.actions.act_window">
+        <field name="name">Calon Siswa</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">pendaftaran.calonsiswa</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- This Menu Item must have a parent and an action -->
+    <menuitem id="pendaftaran_calonsiswa_menu_act" name="Calon Siswa" parent="calon_siswa_menu_categ" action="pendaftaran_calonsiswa_action" sequence="10"/>
+
+</odoo>
