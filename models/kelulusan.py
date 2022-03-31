@@ -16,14 +16,14 @@ class Kelulusan(models.Model):
     
     
     detailnilai_ids = fields.One2many(comodel_name='pendaftaran.detailpenilaian', inverse_name='kelulusan_id', string='Detail Nilai')
-    nilai_akhir = fields.Integer(string='Nilai Akhir', compute='_compute_nilai_akhir', store=True)
+    nilai_akhir = fields.Float(string='Nilai Akhir', compute='_compute_nilai_akhir', store=True)
     
     @api.depends('detailnilai_ids')
     def _compute_nilai_akhir(self):
-        nilai = 0
+        nilai = 0.0
         for record in self:
-            nilai_akhir = 0
-            i = 0
+            nilai_akhir = 0.0
+            i = 0.0
             for detail in record.detailnilai_ids:
                 i += 1
                 nilai_akhir += detail.nilai
@@ -36,10 +36,10 @@ class Kelulusan(models.Model):
 
     @api.depends('detailnilai_ids')
     def _compute_deskripsi(self):
-        min_rata = 0
+        min_rata = 0.0
         for record in self:
             deskripsi = ''
-            rata = 0
+            rata = 0.0
             if record.detailnilai_ids:
                 desk = ''
                 for detail in record.detailnilai_ids:
@@ -69,4 +69,4 @@ class DetailPenilaian(models.Model):
 
     kelulusan_id = fields.Many2one(comodel_name='pendaftaran.kelulusan', string='ID Kelulusan', required=True)
     penilaian_id = fields.Many2one('pendaftaran.penilaian', string='Penilaian')
-    nilai = fields.Integer(string='Nilai')
+    nilai = fields.Float(string='Nilai')

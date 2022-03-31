@@ -7,4 +7,4 @@ class Penilaian(models.Model):
 
     name = fields.Char(string='Name')
     deskripsi = fields.Text(string='Deskripsi')
-    nilai_min = fields.Integer(string='Nilai Minimal')
+    nilai_min = fields.Float(string='Nilai Minimal')
