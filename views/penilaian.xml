@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- pendaftaran.penilaian tree view -->
+    <record id="pendaftaran_penilaian_view_tree" model="ir.ui.view">
+        <field name="name">Aspek Penilaian</field>
+        <field name="model">pendaftaran.penilaian</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="deskripsi"/>
+                <field name="nilai_min"/>
+            </tree>
+        </field>
+    </record>
+    <!-- pendaftaran.penilaian form view -->
+    <record id="pendaftaran_penilaian_view_form" model="ir.ui.view">
+        <field name="name">Form Aspek Penilaian</field>
+        <field name="model">pendaftaran.penilaian</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="deskripsi"/>
+                        <field name="nilai_min"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <!-- pendaftaran.penilaian action window -->
+    <record id="pendaftaran_penilaian_action" model="ir.actions.act_window">
+        <field name="name">Aspek Penilaian</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">pendaftaran.penilaian</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- This Menu Item must have a parent and an action -->
+    <menuitem id="pendaftaran_penilaian_menu_act" name="Aspek Penilaian" parent="kelulusan_menu_categ" action="pendaftaran_penilaian_action" sequence="10"/>
+
+</odoo>

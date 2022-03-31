@@ -33,6 +33,8 @@
         'views/calonsiswa.xml',
         'views/walicalon.xml',
         'views/daftar.xml',
+        'views/penilaian.xml',
+        'views/kelulusan.xml',
         'report/report.xml',
         'report/pendaftaran_report.xml',
     ],

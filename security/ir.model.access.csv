@@ -4,3 +4,6 @@ access_pendaftaran_jalur,access.pendaftaran.jalur,model_pendaftaran_jalur,,1,1,1
 access_pendaftaran_calonsiswa,access.pendaftaran.calonsiswa,model_pendaftaran_calonsiswa,,1,1,1,1
 access_pendaftaran_daftar,access.pendaftaran.daftar,model_pendaftaran_daftar,,1,1,1,1
 access_pendaftaran_walicalon,access.pendaftaran.walicalon,model_pendaftaran_walicalon,,1,1,1,1
+access_pendaftaran_penilaian,access.pendaftaran.penilaian,model_pendaftaran_penilaian,,1,1,1,1
+access_pendaftaran_kelulusan,access.pendaftaran.kelulusan,model_pendaftaran_kelulusan,,1,1,1,1
+access_pendaftaran_detailpenilaian,access.pendaftaran.detailpenilaian,model_pendaftaran_detailpenilaian,,1,1,1,1

@@ -19,4 +19,10 @@
         name="Calon Siswa"
         parent="pendaftaran_menu_root"
         sequence="20"/>
+    <!-- This Menu Item Must have a parent -->
+    <menuitem
+        id="kelulusan_menu_categ"
+        name="Kelulusan"
+        parent="pendaftaran_menu_root"
+        sequence="30"/>
 </odoo>
